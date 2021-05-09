@@ -1,0 +1,22 @@
+<span>DATE</span>
+<ul>
+    <li> {{ myDate | date: 'M/dd/yy' }} </li>
+    <li> {{ myDate | date: 'MMM/d/yy' }} </li>
+    <li> {{ myDate | date: 'shortTime' }} </li>
+    <li> {{ myDate | date: 'fullTime' }} </li>
+</ul>
+<span>NUM</span>
+<ul>
+    <li> {{ num | currency}} </li>
+    <li> {{ num | currency:'CAD'}} </li>
+    <li> {{ num | currency:'ILS':'code'}} </li>
+    <li> {{ num | currency:'ILS':'symbol'}} </li>
+    <li> {{ num | percent }} </li>
+    <li> {{ num | number }} </li>
+</ul>
+<span>WORD</span>
+<ul>
+    <li> {{ word | lowercase }} </li>
+    <li> {{ word | uppercase }} </li>
+    <li> {{ word | titlecase }} </li>
+</ul> 
